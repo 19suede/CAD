@@ -1,0 +1,23 @@
+name: IKONOS_Degradation
+dataset_name: 'IKONOS' 
+model_name: ''
+
+# train setting
+alpha: 0.1
+epoch_num: 500
+batch_size: 32
+base_lr: 1e-3
+weight_decay: 1e-6
+# parameters for scheduler lr
+gamma: 0.1
+step_size: 250
+# model setting
+pan_dim: 1
+lms_dim: 4
+scale: 4
+dr: 2047.0
+
+train_path: "your_path/IKONOS/train_IKONOS.h5"
+val_path: "your_path/IKONOS/val_IKONOS.h5"
+test_path: "your_path/IKONOS/test_IKONOS.h5"
+
